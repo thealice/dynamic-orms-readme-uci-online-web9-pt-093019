@@ -15,4 +15,4 @@ puts "song name: " + song.name
 puts "song album: " + song.album
 song.save
 
-DB[:conn].execute("SELECT * FROM songs WHERE name = 'In Da Wind'")
+puts DB[:conn].execute("SELECT * FROM songs WHERE name = 'In Da Wind'")
